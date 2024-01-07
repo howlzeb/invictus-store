@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store - Invictus Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo-removebg-preview.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <img src="images/other images/cart.png" width="30px" height="30px">
+        <img src="images/other images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>  
+    </div>
+
+<!----single product details ---->
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="row-2">
+            <img src="images/BLACK AIR Motosports Jacket.jpg" width="100%">
+        </div>
+    </div>
+
+        <div class="col-2">
+            <p>Home / BLACK AIR Motosports Jacket</p>
+            <h1>BLACK AIR</h1>
+            <h3>Motosports Jacket</h3>
+            <h4>49.99</h4>
+            <select>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>L</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to Cart</a>
+
+            <h3>Product Details</h3>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                Praesentium cupiditate accusamus provident rem rerum cumque minus perspiciatis non!<br>
+                Pariatur velit quia totam at perferendis sit adipisci quas vel hic eos!</p>
+        </div>
+    </div>
+</div>
+<div class="small-container">
+   </select>
+    <div class="row row-2">
+        <div class="col-4">
+            <img src="images/Vintage SEGA Polo Shirt.png">
+            <h4>Vintage SEGA Polo Shirt</h4>
+            <p>$55.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/Stussy Coat.jpg">
+            <h4>Stussy Coat</h4>
+            <p>$35.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/Stussy 8 Ball.jpg">
+            <h4>Stussy 8 Ball</h4>
+            <p>$47.99</p>
+        </div>
+    </div>
+
+<!----js for toggle menu ---->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+
+
+</script>
+
+</body>
+</html>

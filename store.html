@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store - Invictus Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo-removebg-preview.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <img src="images/other images/cart.png" width="30px" height="30px">
+        <img src="images/other images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>  
+
+    </div>
+
+
+
+
+
+<div class="small-container">
+   <div class="row"></div>
+   <h2>All Products</h2>
+   <select>
+    <option>Default Sorting</option>
+    <option>Sort by Price</option>
+
+
+   </select>
+    <div class="row row-2">
+        <div class="col-4">
+            <a href="productdetails.html">
+                <img src="images/BLACK AIR Motosports Jacket.jpg">
+            </a>
+            <h4>BLACK AIR Motosports Jacket</h4>
+            <p>$49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/Stussy Coat.jpg">
+            <h4>Stussy White 8 Ball</h4>
+            <p>$35.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/Stussy 8 Ball.jpg">
+            <h4>Stussy Green 8 Ball</h4>
+            <p>$35.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/BLACK AIR Oversized Tee.jpeg.png">
+                <h4>BLACK AIR Oversized Tee</h4>
+                <p>$35.99</p>
+        </div>
+    </div>
+
+<!----js for toggle menu ---->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+
+
+</script>
+
+</body>
+</html>
